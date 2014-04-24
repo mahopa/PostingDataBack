@@ -1,0 +1,13 @@
+﻿@model List<StarWars.Models.Character>
+
+
+@foreach (var character in Model)
+{
+    <div class="jumbotron clearfix">
+    <a href="/Characters/Detail/@character.Id" class="character-image-holder-small">
+        <img class="img-responsive img-rounded" src="@character.Picture" />
+    </a>
+    <h1>@character.Name</h1>
+    <h3>@character.Motto</h3>
+</div>
+}

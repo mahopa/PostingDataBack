@@ -1,0 +1,11 @@
+﻿@model StarWars.Models.HomeIndexVM
+<h1>Star Wars Character Directory</h1>
+<h3>@Model.Fact</h3>
+
+<div class="jumbotron clearfix">
+    <div class="character-image-holder">
+        <img class="img-responsive img-rounded" src="@Model.FeaturedCharacter.Picture" />
+    </div>
+    <h1>@Model.FeaturedCharacter.Name</h1>
+    <h3>@Model.FeaturedCharacter.Motto</h3>
+</div>
